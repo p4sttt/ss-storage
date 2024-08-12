@@ -1,0 +1,260 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2024-08-12T14:27:56.776Z",
+  "__export_source": "insomnia.desktop.app:v9.3.2",
+  "resources": [
+    {
+      "_id": "req_495488f8731d45ed8e7abcac57c86f46",
+      "parentId": "fld_ea58cca0658e42fd8751a648e6a3dcca",
+      "modified": 1723472541299,
+      "created": 1723470360594,
+      "url": "{{api}}/image/6dcdd848-ba37-49e7-8b69-7d0fafb0f270",
+      "name": "get image - success",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/9.3.2"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1723470374928,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_ea58cca0658e42fd8751a648e6a3dcca",
+      "parentId": "wrk_b735358bb4c84e89b730057737c85cf1",
+      "modified": 1723470349233,
+      "created": 1723470349233,
+      "name": "get image",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1723470349233,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_b735358bb4c84e89b730057737c85cf1",
+      "parentId": null,
+      "modified": 1723416184298,
+      "created": 1723416184298,
+      "name": "image",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_ee740ca979354f95bb41fb3f53286300",
+      "parentId": "fld_ea58cca0658e42fd8751a648e6a3dcca",
+      "modified": 1723471007070,
+      "created": 1723470719543,
+      "url": "{{api}}/image/UNDEFINED_ID",
+      "name": "get image - failed to found",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/9.3.2"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1723470374828,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_8ed647932a254e32bca2bb05194f0bf0",
+      "parentId": "fld_bef84a398ba8430d8c1d29fd32c8b211",
+      "modified": 1723471019550,
+      "created": 1723416198423,
+      "url": "{{api}}/image",
+      "name": "upload image - success",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "multipart/form-data",
+        "params": [
+          {
+            "id": "pair_70004063c78d42e2b7c50c6b4c62c52a",
+            "name": "file",
+            "value": "",
+            "description": "",
+            "disabled": false,
+            "type": "file",
+            "fileName": "/run/user/1000/doc/28a9bf4f/image.png"
+          }
+        ]
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "multipart/form-data"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/9.3.2"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1723417313066,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_bef84a398ba8430d8c1d29fd32c8b211",
+      "parentId": "wrk_b735358bb4c84e89b730057737c85cf1",
+      "modified": 1723417305740,
+      "created": 1723417305740,
+      "name": "upload image",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1723417305740,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_4c9e713f3506438da2c6186f06018150",
+      "parentId": "fld_bef84a398ba8430d8c1d29fd32c8b211",
+      "modified": 1723471028842,
+      "created": 1723416792295,
+      "url": "{{api}}/image",
+      "name": "upload image - file is empty",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "multipart/form-data",
+        "params": [
+          {
+            "id": "pair_9194cd6ee3a1469c821c1b8ff6d04796",
+            "name": "file",
+            "value": "",
+            "description": "",
+            "disabled": false,
+            "type": "file",
+            "fileName": "/run/user/1000/doc/14182ad/empty-image.png"
+          }
+        ]
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "multipart/form-data"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/9.3.2"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1723417313016,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_9a9f0347d84f46a0afc0a44fad44fbf5",
+      "parentId": "fld_bef84a398ba8430d8c1d29fd32c8b211",
+      "modified": 1723471037004,
+      "created": 1723416811699,
+      "url": "{{api}}/image",
+      "name": "upload image - file is not image",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "multipart/form-data",
+        "params": [
+          {
+            "id": "pair_70004063c78d42e2b7c50c6b4c62c52a",
+            "name": "file",
+            "value": "",
+            "description": "",
+            "disabled": false,
+            "type": "file",
+            "fileName": "/run/user/1000/doc/5041761e/not-a-image.txt"
+          }
+        ]
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "multipart/form-data"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/9.3.2"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1723417312966,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_6b4a5930d7539adc012041c093630c2d0ce2682c",
+      "parentId": "wrk_b735358bb4c84e89b730057737c85cf1",
+      "modified": 1723416184300,
+      "created": 1723416184300,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1723416184300,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_6b4a5930d7539adc012041c093630c2d0ce2682c",
+      "parentId": "wrk_b735358bb4c84e89b730057737c85cf1",
+      "modified": 1723416184302,
+      "created": 1723416184302,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    }
+  ]
+}

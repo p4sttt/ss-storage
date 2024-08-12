@@ -1,0 +1,39 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2024-08-12T14:32:09.004Z",
+  "__export_source": "insomnia.desktop.app:v9.3.2",
+  "resources": [
+    {
+      "_id": "wrk_1e6fd045bef64426820f96d4356466c5",
+      "type": "Workspace",
+      "parentId": "proj_e489c3a3b66a4674bddea63ed6adc227",
+      "modified": 1723470841271,
+      "created": 1723470841271,
+      "name": "ss-storage-env",
+      "description": "",
+      "scope": "environment",
+      "_type": "workspace"
+    },
+    {
+      "_id": "env_e5fce3785c6e0e3393ee40aed7f6ec494e7b80bb",
+      "type": "Environment",
+      "parentId": "wrk_1e6fd045bef64426820f96d4356466c5",
+      "modified": 1723470926012,
+      "created": 1723470841272,
+      "name": "env",
+      "data": {
+        "api": "http://localhost:8080/api"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "api"
+        ]
+      },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1723470841272,
+      "_type": "environment"
+    }
+  ]
+}
